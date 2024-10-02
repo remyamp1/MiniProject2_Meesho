@@ -41,6 +41,15 @@ class Example extends StatelessWidget {
                   Icon(Icons.star,color: const Color.fromARGB(255, 175, 173, 173),),
                 ],
               ),
+              SizedBox(
+                height: 5,
+              ),
+              Row(
+                children: [
+Icon(Icons.currency_rupee,color: Colors.green,),
+Text("569 with 1 Special Offer",style: TextStyle(color: Colors.green),)
+                ],
+              ),
               SizedBox(height: 15,),
               Row(
                 mainAxisAlignment: MainAxisAlignment.start,
@@ -53,7 +62,7 @@ class Example extends StatelessWidget {
                   overflow: TextOverflow.ellipsis,),
                 ],
               ),
-              SizedBox(height: 100,),
+              SizedBox(height: 90,),
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 crossAxisAlignment: CrossAxisAlignment.center,
