@@ -43,8 +43,12 @@ class Example extends StatelessWidget {
               ),
               SizedBox(height: 15,),
               Row(
+                mainAxisAlignment: MainAxisAlignment.start,
+                crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Text('''Style is a way to say who you are without having to speak try trendy naira cut blue full sleeves kurti in georgette with floral prints on it.''',
+                  Text(''' Style is a way to say who you are without
+         having to speak try trendy naira cut blue full
+          sleeves kurti in georgette with floral prints on it.''',
                   maxLines: 4,
                   overflow: TextOverflow.ellipsis,),
                 ],
@@ -57,8 +61,11 @@ class Example extends StatelessWidget {
                   ElevatedButton(onPressed: (){
 Navigator.push(context, MaterialPageRoute(builder: (context)=>Cartexample()));
                   },child: 
-                  Text("Add to Cart",style: TextStyle(fontSize: 15,
-                  color: Colors.pink),),),
+                  Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: Text("Add to Cart",style: TextStyle(fontSize: 15,
+                    color: Colors.pink),),
+                  ),),
                   Spacer(),
                   ElevatedButton(onPressed: (){},child: Text(
                     "Buy Now"

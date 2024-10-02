@@ -24,7 +24,7 @@ class Demo extends StatelessWidget{
             Spacer(),
             Icon(Icons.favorite,color: Colors.red,),
             Icon(Icons.notifications,color: Colors.yellow,),
-            Icon(Icons.card_travel),
+            Icon(Icons.shopping_cart),
           
           ],
          ),
@@ -99,19 +99,20 @@ SizedBox(height: 20),
       ),itemCount: 6,
        itemBuilder: (context,index){
         return Container(
-          height: 700,
-          width: double.infinity,
+          height: 500,
+          width:600,
           decoration: BoxDecoration(borderRadius: BorderRadius.circular(15),
           color: const Color.fromARGB(255, 252, 249, 250)),
           child: 
           
             
               Column(
+                
                 children: [
          
                   Container(
                     
-          height: 100,
+          height: 150,
         width: 150, 
       
          decoration: BoxDecoration(image: DecorationImage(image: AssetImage
@@ -123,25 +124,24 @@ SizedBox(height: 20),
                 imagepath:Database.MyList[index]["image"]
               , name: Database.MyList[index]["name"], price: Database.MyList[index]["price"])));
             },
+          
+          
+                          
           ),
           
                          
                          ),
                          SizedBox(height: 5,),
-                         Row(
-                           children: [
+          
                              Text(Database.MyList[index]["name"]),
                              
-                           ],
-                         ),
+                           
                          SizedBox(height: 5,),
-                         Row(
-                           children: [
+                
                             Icon(Icons.currency_rupee),
                              Text(Database.MyList[index]["price"]),
                              
-                           ],
-                         ),
+                           
                          SizedBox(height: 5,),
                          Row(
                            children: [

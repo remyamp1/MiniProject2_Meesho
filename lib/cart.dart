@@ -13,7 +13,7 @@ class Cartexample extends StatelessWidget{
            Container(
             height: 150,
             width: double.infinity,
-               color: const Color.fromARGB(255, 238, 228, 228),
+               color: const Color.fromARGB(255, 252, 246, 246),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.start,
               crossAxisAlignment: CrossAxisAlignment.start,
@@ -45,7 +45,7 @@ class Cartexample extends StatelessWidget{
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                  Icon(Icons.currency_rupee),
-                 Text("600",style: TextStyle(fontSize: 15),),    Text("  9% off",style: TextStyle(color: const Color.fromARGB(255, 110, 108, 108)),)
+                 Text("600",style: TextStyle(fontSize: 20),),    Text("  9% off",style: TextStyle(color: const Color.fromARGB(255, 110, 108, 108)),)
                
                ],
              ),
@@ -67,6 +67,7 @@ class Cartexample extends StatelessWidget{
                 Text("Remove",style: TextStyle(color: const Color.fromARGB(255, 204, 202, 202)),)
               ],
              ),
+             
                 ],
                ),
            
@@ -79,52 +80,111 @@ class Cartexample extends StatelessWidget{
             
                  
                  ),
-SizedBox(height: 10,),
-                 Container(
-                  height: 100,
-                  width: double.infinity,
-                  color: const Color.fromARGB(255, 248, 246, 247),
-                  child: Row(
+                 SizedBox(height: 5),
+                   Row(
                     mainAxisAlignment: MainAxisAlignment.start,
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      Text("Price Details (1 item)",style: TextStyle(fontSize: 15),),
-
-                      SizedBox(height: 5,),
-                      Text("Total Product Price")
+                      Padding(
+                        padding: const EdgeInsets.all(8.0),
+                        child: Text("Sold by:NIVOK Fashion HUB"),
+                      ),
+                      Spacer(),
+                      Text("Free Delivery")
                     ],
-                  ),
+                   ),
+                   SizedBox(height: 5),
+                   Container(
+                    height: 50,
+                    width: double.infinity,
+                    color:  const Color.fromARGB(255, 252, 246, 246),
+                    child: Row(
+                      children: [
+                        Text("Wishlist",style: TextStyle(fontSize: 20),),
+                        Spacer(),
+                        Icon(Icons.arrow_right)
+                      ],
+                    ),
+                    
+                  
+                    
+                   ),
+SizedBox(height: 10,),
+                 
+                   Row(
+                    mainAxisAlignment: MainAxisAlignment.start,
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text("Price Details (1 item)",style: TextStyle(fontSize: 20),),
+                    ]
+                   ),
+                   SizedBox(height: 10),
+                      Row(
+                        children: [
+                          Text("Total Product Price"),
+                          Spacer(),
+                          Text("+",style: TextStyle(fontSize: 15)),
+                          Icon(Icons.currency_rupee),
+                          Text("600",style: TextStyle(fontSize: 20),)
+                        ],
+                      ),
+                      SizedBox(height: 5),
+                      Row(
+                        children: [
+                          Text("Total Discounts",style: TextStyle(color: Colors.green)),
+                          Spacer(),
+                          Text("-",style: TextStyle(fontSize: 15,color: Colors.green)),
+                          Icon(Icons.currency_rupee,color: Colors.green,),
+                          Text("24",style: TextStyle(fontSize: 20,color: Colors.green))
+                        ],
+                      ),
+                  
+                    
+                    
+                    
 
                     
                                  
-                 ),
-                 Text("________________________________________________"),
+                 
+                 Text("__________________________________________________________________"),
                  SizedBox(height: 20,),
                  Row(
                    children: [
-                     Text("Order Total"),
+                     Text("Order Total",style: TextStyle(fontSize: 20)),
                   
                  Spacer(),
                  Icon(Icons.currency_rupee),
-                 Text("600"),
+                 Text("576",style: TextStyle(fontSize: 20),),
                    ]
                  ),
+                 SizedBox(height: 10),
+                 Container(
+                  height: 30,
+                  width: double.infinity,
+                  color: const Color.fromARGB(255, 187, 241, 188),
+                  child: 
+                  Center(child: Text("Yay! Your total discount is 24",style: TextStyle(color: Colors.green),)),
+                 ),
                  
-                SizedBox(height: 40,),
+                SizedBox(height: 50,),
                 Container(
                   height: 60,
                   width: double.infinity,
+                  
                   child: Row(
                     children: [
                       Icon(Icons.currency_rupee),
-                      Text("600"),
+                      Text("576",style: TextStyle(fontSize: 20),),
                       Spacer(),
-                      Container(
-                        height: 30,
-                        width: 70,
-                        decoration: BoxDecoration(borderRadius: BorderRadius.circular(5)
-                        ,color: const Color.fromARGB(255, 245, 85, 138),),
-                        child: Text("Continue",style: TextStyle(color: Colors.white),),
+                      Padding(
+                        padding: const EdgeInsets.all(8.0),
+                        child: Container(
+                          height: 30,
+                          width: 70,
+                          decoration: BoxDecoration(borderRadius: BorderRadius.circular(5)
+                          ,color: const Color.fromARGB(255, 245, 85, 138),),
+                          child: Text("Continue",style: TextStyle(color: Colors.white),),
+                        ),
                       )
                     ],
                   ),
